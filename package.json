@@ -1,0 +1,26 @@
+{
+  "description": "Ace Editor app for WebShell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websh-org/app-ace.git"
+  },
+  "keywords": [
+    "websh",
+    "webshell",
+    "app-ace"
+  ],
+  "scripts": {
+    "test": "(cd tests; parcel index.html --open)",
+    "build": "(cd src; NODE_ENV=production parcel build index.html --public-url=/app-ace --out-dir=../docs)"
+  },
+  "author": "Zoran Obradović, Ljudmila.org",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/websh-org/app-ace/issues"
+  },
+  "homepage": "https://websh.org/packages/app-ace/",
+  "private": true,
+  "dependencies": {
+    "@websh/web-shell-app": "^0.1.1"
+  }
+}
