@@ -1,4 +1,4 @@
-import { ShellApp as WebShellApp } from "@websh/web-shell-app";
+import { WebShellApp } from "@websh/web-shell-app";
 
 WebShellApp.manifest({
   title:"ACE Editor",
