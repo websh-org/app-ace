@@ -19,7 +19,7 @@ WebShellApp.manifest({
   }
 })
 
-WebShellApp.on('file','open',({content,extension})=>{
+WebShellApp.command('file-open',({format,content,extension})=>{
   const modes = {
     js: "javascript",
     sql: "sql"
@@ -30,11 +30,11 @@ WebShellApp.on('file','open',({content,extension})=>{
   editor.setValue(content);
 })
 
-WebShellApp.on('file','save',()=>{
+WebShellApp.command('file-save',()=>{
   return editor.getValue();
 })
 
-WebShellApp.on('file','new',()=>{
+WebShellApp.command('file-new',()=>{
   editor.setValue("")
 })
 
