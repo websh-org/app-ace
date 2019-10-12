@@ -1,7 +1,7 @@
 import { WebShellApp } from "@websh/web-shell-app";
 
 WebShellApp.manifest({
-  title:"ACE Editor",
+  name: "ACE Editor",
   icon: "/ace-logo.png",
   api: {
     file: {
