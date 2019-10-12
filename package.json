@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "(cd tests; parcel index.html --open)",
-    "build": "(cd src; NODE_ENV=production parcel build index.html --public-url=/app-ace --out-dir=../docs)"
+    "build": "(rm -rf docs/*; cd src; NODE_ENV=production parcel build index.html --public-url=/app-ace --out-dir=../docs)"
   },
   "author": "Zoran Obradović, Ljudmila.org",
   "license": "ISC",
@@ -22,5 +22,9 @@
   "private": true,
   "dependencies": {
     "@websh/web-shell-app": "^0.1.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-plugin-static-files-copy": "^2.2.1"
   }
 }
