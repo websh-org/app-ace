@@ -2,7 +2,12 @@ import { WebShellApp } from "@websh/web-shell-app";
 
 WebShellApp.manifest({
   name: "ACE Editor",
-  icon: "/ace-logo.png",
+  icon: "ace-logo.png",
+  description: "Ace Code Editor for WebShell",
+  version:"1.4.6",
+  license:"MIT",
+  homepage:"https://github.com/websh-org/app-ace#readme",
+  repository:"https://github.com/websh-org/app-textarea.git",
   api: {
     file: {
       formats: {
