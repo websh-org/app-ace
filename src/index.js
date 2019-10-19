@@ -36,7 +36,7 @@ WebShellApp.command('file-open',({format,content,extension})=>{
 })
 
 WebShellApp.command('file-save',()=>{
-  return editor.getValue();
+  return {content:editor.getValue(),type:"text/plain"};
 })
 
 WebShellApp.command('file-new',()=>{
