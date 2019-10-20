@@ -10,7 +10,6 @@
     "app-ace"
   ],
   "scripts": {
-    "test": "(cd tests; parcel index.html --open)",
     "build": "(rm -rf docs/*; cd src; NODE_ENV=production parcel build index.html --public-url=/app-ace --out-dir=../docs)"
   },
   "author": "Zoran Obradović, Ljudmila.org",
