@@ -14,6 +14,7 @@ WebShellApp.manifest({
         "text-file" : {
           type: "text/plain text/*",
           title: "Text File",
+          extension:"txt *",
           encoding: "text",
           new: true,
           open: true,
