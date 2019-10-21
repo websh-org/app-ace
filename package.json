@@ -21,7 +21,7 @@
   "homepage": "https://websh.org/packages/app-ace/",
   "private": true,
   "dependencies": {
-    "@websh/web-shell-app": "^0.1.1"
+    "@websh/web-shell-app": "^0.1.2"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",

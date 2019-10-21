@@ -14,10 +14,10 @@
   dependencies:
     "@websh/remote-slave-port" "^0.1.0"
 
-"@websh/web-shell-app@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@websh/web-shell-app/-/web-shell-app-0.1.1.tgz#6dfd7c2e2a6e3a26179fc5d8cf713538ee94bd60"
-  integrity sha512-Ehgt3pmypBHl5+wtI0Z5EVXrqepnh2fmhIoLri1F6s8uH8S2pYr9L2sXO2wSj9s8L0FjLmun/naAZqaJ1wrFkg==
+"@websh/web-shell-app@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@websh/web-shell-app/-/web-shell-app-0.1.2.tgz#51018095666e547a2776442d3d6ef9b081250dfa"
+  integrity sha512-Z46ER6HgtEQZmr/uE+Sx32P4YwU9WjpqN0Fix/kDTsGGftyIyx+E84LLaZHPPUjfrpUmdC4Ay8i6npTpA9XzrQ==
   dependencies:
     "@websh/remote-slave-port" "^0.1.0"
 
