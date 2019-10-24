@@ -10,8 +10,9 @@
     "app-ace"
   ],
   "scripts": {
+    "dev": "(cd src; PORT=42002 parcel index.html)",
     "build": "(rm -rf docs/*; cd src; NODE_ENV=production parcel build index.html --public-url=/app-ace --out-dir=../docs)",
-    "publish": "(git add -A; git commit -m build; git push)"
+    "publish": "npm run build; git add -A; git commit -m publish; git push"
   },
   "author": "Zoran Obradović, Ljudmila.org",
   "license": "ISC",

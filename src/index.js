@@ -1,29 +1,6 @@
 import { WebShellApp } from "@websh/web-shell-app";
-
-WebShellApp.manifest({
-  name: "ACE Editor",
-  icon: "ace-logo.png",
-  description: "Ace Code Editor for WebShell",
-  version:"1.4.6",
-  license:"MIT",
-  homepage:"https://github.com/websh-org/app-ace#readme",
-  repository:"https://github.com/websh-org/app-textarea.git",
-  api: {
-    file: {
-      formats: {
-        "text-file" : {
-          type: "text/plain text/*",
-          title: "Text File",
-          extension:"txt *",
-          encoding: "text",
-          new: true,
-          open: true,
-          save: true
-        }
-      }
-    }
-  }
-})
+import manifest from "./manifest.json";
+WebShellApp.manifest(manifest);
 
 WebShellApp.command('file-open',({format,content,extension})=>{
   const modes = {
