@@ -9,16 +9,16 @@
   "repository": "https://github.com/websh-org/app-ace.git",
   "api": {
     "file": {
+      "new": "text",
+      "open": ["text"],
+      "save": ["text"],
       "formats": {
-        "text-file": {
+        "text": {
           "type": "text/plain",
-          "label": "Text File",
+          "name": "Text File",
           "extension": "txt",
           "accept": "text/*,application/json",
-          "encoding": "text",
-          "new": true,
-          "open": true,
-          "save": true
+          "encoding": "text"
         }
       }
     }

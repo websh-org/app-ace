@@ -2,14 +2,12 @@ import { WebShellApp } from "@websh/web-shell-app";
 import manifest from "./manifest.json";
 WebShellApp.manifest(manifest);
 
+var modelist = ace.require("ace/ext/modelist");
+console.log({modelist})
+
 WebShellApp.command('file-open',({format,content,extension})=>{
-  const modes = {
-    js: "javascript",
-    sql: "sql"
-  };
-  const mode = modes[extension] || "text";
-  editor.session.setMode("ace/mode/"+mode);
-  
+  var mode = modelist.getModeForPath("file."+extension);
+  editor.session.setMode(mode.mode);
   editor.setValue(content);
 })
 
