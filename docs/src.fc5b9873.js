@@ -3,8 +3,8 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Ax/l":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.WebShellApp=void 0;var e=require("@websh/remote-slave-port"),r=new e.RemoteSlavePort("SOUTH-TOOTH");exports.WebShellApp=r,r.command("proc-close",function(){return!0});
 },{"@websh/remote-slave-port":"czNZ"}],"Sx6z":[function(require,module,exports) {
-module.exports={v:0,name:"ACE",icon:"ace-logo.png",description:"Ace Code Editor for WebShell",version:"1.4.6",license:"MIT",homepage:"https://github.com/websh-org/app-ace#readme",repository:"https://github.com/websh-org/app-ace.git",api:{file:{new:"text",open:["text"],save:["text"],formats:{text:{type:"text/plain",name:"Text File",extension:"txt",accept:"text/*,application/json",encoding:"text"}}}}};
+module.exports={v:0,name:"ACE",icon:"icon.svg",description:"Ace Code Editor for WebShell",version:"1.4.6",license:"MIT",homepage:"https://github.com/websh-org/app-ace#readme",repository:"https://github.com/websh-org/app-ace.git",api:{file:{new:"text",open:["text"],save:["text"],formats:{text:{type:"text/plain",name:"Text File",extension:"txt",accept:"text/*,application/json",encoding:"text"}}}}};
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=require("@websh/web-shell-app"),t=n(require("./manifest.json"));function n(e){return e&&e.__esModule?e:{default:e}}e.WebShellApp.manifest(t.default);var o=ace.require("ace/ext/modelist");console.log({modelist:o}),e.WebShellApp.command("file-open",function(e){e.format;var t=e.content,n=e.extension,a=o.getModeForPath("file."+n);l.session.setMode(a.mode),l.setValue(t)}),e.WebShellApp.command("file-save",function(){return{content:l.getValue(),type:"text/plain"}}),e.WebShellApp.command("file-new",function(){l.setValue("")});var l=ace.edit("editor");l.setTheme("ace/theme/monokai");
 },{"@websh/web-shell-app":"Ax/l","./manifest.json":"Sx6z"}]},{},["Focm"], null)
-//# sourceMappingURL=/app-ace/src.807d3075.js.map
+//# sourceMappingURL=/app-ace/src.fc5b9873.js.map
